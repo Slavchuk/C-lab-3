@@ -8,10 +8,10 @@ int getSumInt(int arr[], int N)
 	int reflective = 0, positive = 0, sum = 0, i = 0;
 	while (arr[i] > 0 && arr[i] != '\0')
 		i++;
-	reflective = i;
+	reflective = i+1;
 	while (arr[N - 1] < 0)
 		N--;
-	positive = N-1;
+	positive = N-2;
 	if (reflective > positive)
 		sum = 0;
 	else
